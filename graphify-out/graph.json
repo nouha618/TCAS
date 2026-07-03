@@ -1,0 +1,117 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "app.py",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "app.py",
+      "id": "app",
+      "community_name": "app.py"
+    },
+    {
+      "label": "load_model()",
+      "file_type": "code",
+      "source_file": "app.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "load_model()",
+      "id": "app_load_model",
+      "community_name": "app.py"
+    },
+    {
+      "label": "generate_dataset.py",
+      "file_type": "code",
+      "source_file": "generate_dataset.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "generate_dataset.py",
+      "id": "generate_dataset",
+      "community_name": "generate_dataset.py"
+    },
+    {
+      "label": "G\u00e9n\u00e8re un dataset synth\u00e9tique r\u00e9aliste pour le projet TCAS (Traffic Collision Av",
+      "file_type": "rationale",
+      "source_file": "generate_dataset.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "genere un dataset synthetique realiste pour le projet tcas (traffic collision av",
+      "id": "generate_dataset_rationale_1",
+      "community_name": "generate_dataset.py"
+    },
+    {
+      "label": "predict.py",
+      "file_type": "code",
+      "source_file": "predict.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "predict.py",
+      "id": "predict",
+      "community_name": "predict.py"
+    },
+    {
+      "label": "predict_risk()",
+      "file_type": "code",
+      "source_file": "predict.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "predict_risk()",
+      "id": "predict_predict_risk",
+      "community_name": "predict.py"
+    },
+    {
+      "label": "train_model.py",
+      "file_type": "code",
+      "source_file": "train_model.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "train_model.py",
+      "id": "train_model",
+      "community_name": "train_model.py"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app",
+      "target": "app_load_model"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "generate_dataset.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "generate_dataset_rationale_1",
+      "target": "generate_dataset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "predict.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "predict",
+      "target": "predict_predict_risk"
+    }
+  ],
+  "hyperedges": []
+}

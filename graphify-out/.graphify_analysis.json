@@ -1,0 +1,37 @@
+{
+  "communities": {
+    "0": [
+      "app",
+      "app_load_model"
+    ],
+    "1": [
+      "generate_dataset",
+      "generate_dataset_rationale_1"
+    ],
+    "2": [
+      "predict",
+      "predict_predict_risk"
+    ],
+    "3": [
+      "train_model"
+    ]
+  },
+  "cohesion": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+  },
+  "gods": [
+    {
+      "id": "generate_dataset_rationale_1",
+      "label": "G\u00e9n\u00e8re un dataset synth\u00e9tique r\u00e9aliste pour le projet TCAS (Traffic Collision Av",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
