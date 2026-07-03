@@ -1,0 +1,6 @@
+{
+  "name": "Graphify Workspace",
+  "description": "An interactive code dependency graph visualizer and community clustering tool. Upload or paste codebase files, extract import structures, run modularity-based community detection, and auto-label communities with Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
